@@ -105,4 +105,20 @@ except ValueError:
 # 만약에 0을 입력하면 종료되는 프로그램을 만드시오.
 
 
-# 과제) myif에 함수 : 두개의 프로그램이 될 수 있게게
+# 과제) myif에 함수 : 두개의 프로그램이 될 수 있게
+
+# 5번 반복 실행
+for i in range(5):
+     print(f"--- {i+1}번째 캐릭터 그림 출력 ---")
+     # 그림 출력 함수 호출 (예: animal_print())
+     character_print()
+ 
+# 계속 반복 실행하고, 0 입력 시 종료
+while True:
+     user_input = input("계속하려면 아무 숫자나 입력하세요 (종료하려면 0 입력): ")
+     if user_input == "0":
+         print("프로그램을 종료합니다.")
+         break
+     else:
+         print("캐릭터 그림을 다시 출력합니다.")
+         character_print()
